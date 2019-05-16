@@ -1,14 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Browserify Starter</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1>Hello World</h1>
 
+<body>
+
+    <header>
+        <div>
+            <div class="dropdown-content">
+                <button><a id="btn_signout">Sign Out</a></button>
+            </div>
+            <!-- overlay welcome on the the page  -->
+            <div id="overlay_welcome" class="overlay">
+                <span id="btn_close_welcome" title="close overlay">&#215</span>
+                <div id="wrapper_welcome">
+                    <article id="container_welcome">
+                        <h2>Welcome to Ternary Traveler</h2>
+                        <p>First timer?</p>
+                        <button id="btn_open_signup_1">Sign Up</button>
+                        <p>Already a user?</p>
+                        <button id="btn_open_signin_1">Sign In</button>
+                    </article>
+                </div>
+            </div>
+            <div id="overlay_signup" class="overlay">
+                <span id="btn_close_signup" title="close overlay">&#215</span>
+                <div id="wrapper_signup">
+                    <h2>Sign Up</h2>
+                    <form id="container_signup">
+                        <input type="text" id="sign_up_username" placeholder="Enter Username">
+                        <input type="text" id="sign_up_email" placeholder="Enter Email">
+                        <input type="text" id="sign_up_password" placeholder="Enter Password">
+                        <input type="submit" id="btn_register" value="Join Now">
+                    </form>
+                </div>
+            </div>
+            <div id="overlay_signin" class="overlay">
+                <span id="btn_close_signin" title="close overlay">&#215</span>
+                <div id="wrapper_signin">
+                    <h2>Sign in</h2>
+                    <form id="container_signin">
+                        <input type="text" id="sign_in_username" placeholder="Enter Username">
+                        <input type="text" id="sign_in_password" placeholder="Enter Password">
+                        <input type="submit" id="btn_sign_in" value="Sign In">
+                    </form>
+                </div>
+            </div>
+    </header>
+    <h1>Ternary Traveler</h1>
+    <form class="add_interest">
+        <h2 id=interest-title>Create or Edit Interest</h2>
+        <h2></h2>
+        <input type="text" id="interest_name" placeholder="Point of Interest">
+        <h2></h2>
+        <select id="interest_location">
+            <option id="1" value="1">Italy</option>
+            <option id="2" value="2">Switz</option>
+            <option id="3" value="3">France</option>
+        </select>
+        <h2></h2>
+        <input type="text" id="interest_desc" placeholder="Description of interest">
+        <h2></h2>
+        <input type="text" id="interest_cost" placeholder="Cost to travel">
+        <h2></h2>
+        <input type="submit" id="btn_add_interest">
+
+    </form>
+
+    <div class="add_wrapper"></div>
+    <div id="interest_wrapper"></div>
+
+    <form class="add_review">
+        <h2 id=review-title>Write or Edit a Review</h2>
+        <textarea id="review-area" placeholder="write a review"></textarea>
+        <br><br>
+        <input type="submit" id="btn_add_review">
+    </form>
+    <br>
     <script src="bundle.js"></script>
 </body>
+
 </html>

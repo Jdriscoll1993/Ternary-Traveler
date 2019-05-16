@@ -1,20 +1,51 @@
 {
-    "places": [
-        {
-            "id": 1,
-            "name": "Italy",
-            "visa_required": false
-        },
-        {
-            "id": 2,
-            "name": "Switzerland",
-            "visa_required": true
-        },
-        {
-            "id": 3,
-            "name": "France",
-            "visa_required": false
-        }
-    ],
-    "interests": []
+  "places": [
+    {
+      "id": 1,
+      "name": "Italy",
+      "visa_required": false
+    },
+    {
+      "id": 2,
+      "name": "Switzerland",
+      "visa_required": true
+    },
+    {
+      "id": 3,
+      "name": "France",
+      "visa_required": false
+    }
+  ],
+  "interests": [
+    {
+      "id": 1,
+      "placeId": 1,
+      "reviewId": 1,
+      "name": "Local Market",
+      "description": "Local market where you can try purchase local products and try the local food",
+      "cost": 0
+    },
+    {
+      "name": "",
+      "description": "",
+      "cost": "",
+      "placeId": 1,
+      "id": 2
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "interestId": 1,
+      "review": "This is where you will see the review when it is posted"
+    }
+  ],
+  "users": [
+    {
+      "username": "joey",
+      "email": "joey",
+      "password": "joey",
+      "id": 3
+    }
+  ]
 }
