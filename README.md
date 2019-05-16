@@ -1,18 +1,12 @@
-# Browserify Starter Files
+# Ternary Traveler -  Version 1.02
 
-Use this repository for when you want to start a new modular JavaScript application that gets compiled by Browserify. Create JavaScript modules in the `src/scripts` directory.
+#User can sign up or sign in if they are an existing user. -- Version 2 will incorporate the usage of a userId  to hold specific user data. Users will not be able to bypass the login screen without logging in.
 
-## Project Setup
+#User can add a new interest card. 
 
-1. Clone this repository.
-2. `cd src/lib`
-3. `npm install`
-4. run `grunt`
+#User can delete an interest card.--Version 2 will prompt the user to confirm or cancel delete.
 
-The web server will be started, and the JavaScript code in the `src/scripts` directory will be compiled into `public/bundle.js`.
+# If user writes a review, its data is stored in database, but not yet populated to DOM, which will be a feature of --Version 2
 
-1. Open Chome and make sure your developer tools are open.
-1. Open [http://localhost:8080](http://localhost:8080) in your browser. This serves your project.
-1. Open [http://localhost:8088](http://localhost:8088) in your browser. This serves your json-server.
-
+#--Version 2 will allow users to edit their interest cards and edit their reviews for particular interests.
 
